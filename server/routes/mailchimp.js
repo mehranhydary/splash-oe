@@ -2,8 +2,8 @@ import express from 'express';
 let router = express.Router();
 var Mailchimp = require('mailchimp-api-v3');
 
-var mcApiKey = 'e622013e171a42395de8806f486a91a5-us17';
-var mcListId = 'f36f142701';
+var mcApiKey = '';
+var mcListId = '';
  
 var mailchimp = new Mailchimp(mcApiKey);
 

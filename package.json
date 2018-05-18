@@ -36,7 +36,6 @@
     "redux-promise": "^0.6.0",
     "serve-favicon": "^2.5.0",
     "style-loader": "^0.21.0",
-    "superagent": "^3.8.3",
     "url-loader": "^1.0.1",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.14",
