@@ -3370,7 +3370,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n   value: true\n});\
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n   value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nexports.default = function () {\n   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n   var action = arguments[1];\n\n   switch (action.type) {\n      case _index.LIST:\n         return _extends({}, state, { github: action.payload.data });\n   }\n   return state;\n};\n\nvar _index = __webpack_require__(/*! ../actions/index */ \"./src/actions/index.js\");\n\n//# sourceURL=webpack:///./src/reducers/list.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n   value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nexports.default = function () {\n   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n   var action = arguments[1];\n\n   switch (action.type) {\n      case _index.LIST:\n         return _extends({}, state, { members: action.payload.data });\n   }\n   return state;\n};\n\nvar _index = __webpack_require__(/*! ../actions/index */ \"./src/actions/index.js\");\n\n//# sourceURL=webpack:///./src/reducers/list.js?");
 
 /***/ }),
 
