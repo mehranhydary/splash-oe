@@ -1,5 +1,5 @@
 {
-  "name": "mailchimp-rsvp-with-react",
+  "name": "react-email-subscription",
   "version": "1.0.0",
   "description": "Email Subscription with MailChimp, React, and Express",
   "main": "main.js",
