@@ -13,7 +13,7 @@ class Alert extends Component {
   }
   render(){
     return(
-        <div className="col-lg-12 col-md-12">
+        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={{position: "relative", marginLeft: 10+"%"}}>
             <div className={this.props.alert._class} role="alert">
               {this.props.alert._message}
               <button type="button" onClick={this.closeAlert} className="close" data-dismiss="alert" aria-label="Close">

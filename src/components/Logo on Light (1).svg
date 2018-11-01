@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1167px" height="508px" viewBox="0 0 1167 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo on Light</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="45.2436399%" y1="8.9446914%" x2="71.1442031%" y2="91.6805092%" id="linearGradient-1">
+            <stop stop-color="#FAF1CD" offset="0%"></stop>
+            <stop stop-color="#FFE687" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Logo-on-Light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo/Full" transform="translate(62.000000, 61.000000)">
+            <text id="overeasy" font-family="CircularStd-Book, Circular Std" font-size="150" font-weight="300" fill="#505050">
+                <tspan x="426" y="257">overeasy</tspan>
+            </text>
+            <g id="Group" fill-rule="nonzero">
+                <path d="M21.701724,190.918506 C35.9419068,88.3195811 190.312906,30.8661246 264.654861,66.685706 C338.996815,102.505287 345.409317,277.50571 279.670287,346.75933 C213.931257,416.012951 7.46154127,293.51743 21.701724,190.918506 Z" id="Path" fill="url(#linearGradient-1)" transform="translate(173.000000, 211.500000) rotate(8.000000) translate(-173.000000, -211.500000) "></path>
+                <path d="M131.268464,133.352134 C123.585245,69.5415745 282.955573,-18.7810244 334.959335,3.52679584 C386.963097,25.8346161 400.299069,213.305511 357.31195,257.436721 C314.324831,301.567932 138.951682,197.162693 131.268464,133.352134 Z" id="Path" stroke="#505050" stroke-width="6" style="mix-blend-mode: difference;" transform="translate(257.000000, 134.000000) scale(-1, 1) translate(-257.000000, -134.000000) "></path>
+                <path d="M272.145319,156.961659 C290.782796,138.289587 261.603468,86.0528342 231.23836,112.171211 C200.873252,138.289587 253.507842,175.63373 272.145319,156.961659 Z" id="Oval" fill="#FFFFFF" transform="translate(250.000000, 133.500000) scale(-1, 1) rotate(-90.000000) translate(-250.000000, -133.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

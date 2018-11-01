@@ -28,9 +28,9 @@ class Contact extends Component {
          this.props.contact( this.state.email_address, this.state.first_name, this.state.last_name ).
          then( (res) => {
             res.payload.data.status === 400 ? (
-               this.props.showHideAlert(res.payload.data.msg,'alert alert-danger alert-dismissible show-alert')
+               this.props.showHideAlert(res.payload.data.msg,'alert alert-warning alert-dismissible show-alert push-down')
             ) : ( 
-               this.props.showHideAlert(res.payload.data.msg,'alert alert-success alert-dismissible show-alert'),
+               this.props.showHideAlert(res.payload.data.msg,'alert alert-success alert-dismissible show-alert push-down'),
                this.getMailingList()
             )
          })
@@ -54,32 +54,31 @@ class Contact extends Component {
       )
    }
    render(){
-      const style = { 'margin' : '10px 0', 'width' : '100%' }
       return(
-         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2>Email Subscription</h2>
-            <form style={style} onSubmit={this.onSubmitLocation.bind(this)}>
-                <div className="form-group">
-                  <label>Email address</label>
-                  <input type="email" onChange={this.handleChange} className="form-control" name="email_address" placeholder="Enter email" />
-                </div>
-                <div className="form-group">
-                  <label>First Name</label>
-                  <input type="text" onChange={this.handleChange} name="first_name" className="form-control" name="first_name" placeholder="Enter first name" />
-                </div>
-                <div className="form-group">
+         <div className="container" style={{minWidth: 450+"px"}}> 
+            <form className="form-inline row" onSubmit={this.onSubmitLocation.bind(this)} style={{display: "inline", minWidth: 450+"px"}}>
+                <span className="form-group col-sm-1" style={{width: 12+"vw"}}>
+                  <div className="input-group">
+                    <span class="input-group-addon"><label style={{color: "#FFE687", fontSize: 1.2+"vw"}}>First Name</label></span>
+                    < input type="text" onChange={this.handleChange} name="first_name" className="form-control" name="first_name" placeholder="Enter first name" style={{width: 12+"vw", height: 4+"vh", fontSize: 0.7+"vw", position: "absolute"}} />
+                  </div>
+                </span>
+                <span className="form-group col-sm-1" style={{width: 12+"vw", marginLeft: 1.5+"vw"}}>
+                  <div className="input-group">
+                    <span class="input-group-addon"><label style={{color: "#FFE687", fontSize: 1.2+"vw"}}>Email</label></span>
+                    <input type="email" onChange={this.handleChange} className="form-control" name="email_address" placeholder="Enter email" style={{width: 12+"vw", height: 4+"vh", fontSize: 0.7+"vw", position: "absolute"}}/>
+                  </div>
+                </span>
+                {/* <div className="form-group">
                   <label>Last Name</label>
                   <input type="text" onChange={this.handleChange} name="last_name" className="form-control" name="last_name" placeholder="Enter last name" />
+                </div> */}
+                <div className="form-group col-sm-1" style={{width: 12+"vw", marginLeft: 1.5+"vw", marginTop: 2+"vw"}}>
+                  <div className="input-group">
+                    <button type="submit" className="btn btn-info" style={{width: 10+"vw", fontSize: 1+"vw", position: "absolute", height: 4+"vh",}}>Submit</button>
+                  </div>
                 </div>
-                <button type="submit" className="btn btn-info">Submit</button>
             </form>
-            <h2>Subscribers List</h2>
-            <ul className="list-group">
-              { this.state.members_list.map((li, i) => {
-                  return <li className="list-group-item" key={i} id={li.id}> <strong>Email Address:</strong> {li.email_address} - <strong>Name:</strong> {li.merge_fields.FNAME} {li.merge_fields.LNAME}</li>
-                })
-              }
-            </ul>
          </div>
       );
    }
