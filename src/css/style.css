@@ -20,3 +20,24 @@
 .push-down{
     margin-top: 20px;
 }
+
+.top-buffer-20 { 
+    margin-top:20%; 
+}
+
+.top-buffer-17 { 
+    margin-top:17%; 
+}
+
+.top-buffer-15 { 
+    margin-top:15%; 
+}
+
+.top-buffer-10 { 
+    margin-top:10%; 
+}
+
+
+.top-buffer-5 { 
+    margin-top:5%; 
+}

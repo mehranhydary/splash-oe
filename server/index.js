@@ -20,10 +20,10 @@ app.use( (req, res, next) => {
   next()
 });
 
-const port = 1955;
+const port = 3000;
 
 app.use(express.static(path.resolve(__dirname, '../dist')));
-app.use(favicon(path.join(__dirname, '../src/images', 'favicon.png')));
+app.use(favicon(path.join(__dirname, '../src/images', 'favicon.ico')));
 
 app.use('/api/mailchimp/', mailchimp);
 

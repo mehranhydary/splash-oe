@@ -55,27 +55,27 @@ class Contact extends Component {
    }
    render(){
       return(
-         <div className="container" style={{minWidth: 450+"px"}}> 
-            <form className="form-inline row" onSubmit={this.onSubmitLocation.bind(this)} style={{display: "inline", minWidth: 450+"px"}}>
-                <span className="form-group col-sm-1" style={{width: 12+"vw"}}>
+         <div className="container" style={{margin: 0}}>
+            <form className="form-inline row" onSubmit={this.onSubmitLocation.bind(this)} style={{display: "inline"}}>
+                <span className="form-group col-sm-2 col-xs-2" style={{padding: 0}}>
                   <div className="input-group">
                     <span class="input-group-addon"><label style={{color: "#FFE687", fontSize: 1.2+"vw"}}>First Name</label></span>
-                    < input type="text" onChange={this.handleChange} name="first_name" className="form-control" name="first_name" placeholder="Enter first name" style={{width: 12+"vw", height: 4+"vh", fontSize: 0.7+"vw", position: "absolute"}} />
+                    < input type="text" onChange={this.handleChange} name="first_name" className="form-control" name="first_name" placeholder="Enter first name" style={{width: 12+"vw", height: 5+"vh", fontSize: 0.8+"vw", position: "absolute"}} />
                   </div>
                 </span>
-                <span className="form-group col-sm-1" style={{width: 12+"vw", marginLeft: 1.5+"vw"}}>
+                <span className="form-group col-sm-2 col-xs-2" style={{padding: 0}}>
                   <div className="input-group">
                     <span class="input-group-addon"><label style={{color: "#FFE687", fontSize: 1.2+"vw"}}>Email</label></span>
-                    <input type="email" onChange={this.handleChange} className="form-control" name="email_address" placeholder="Enter email" style={{width: 12+"vw", height: 4+"vh", fontSize: 0.7+"vw", position: "absolute"}}/>
+                    <input type="email" onChange={this.handleChange} className="form-control" name="email_address" placeholder="Enter email" style={{width: 12+"vw", height: 5+"vh", fontSize: 0.8+"vw", position: "absolute"}}/>
                   </div>
                 </span>
                 {/* <div className="form-group">
                   <label>Last Name</label>
                   <input type="text" onChange={this.handleChange} name="last_name" className="form-control" name="last_name" placeholder="Enter last name" />
                 </div> */}
-                <div className="form-group col-sm-1" style={{width: 12+"vw", marginLeft: 1.5+"vw", marginTop: 2+"vw"}}>
+                <div className="form-group col-sm-2 col-xs-2" style={{padding: 0, marginTop: 2.5+"%"}}>
                   <div className="input-group">
-                    <button type="submit" className="btn btn-info" style={{width: 10+"vw", fontSize: 1+"vw", position: "absolute", height: 4+"vh",}}>Submit</button>
+                    <button type="submit" className="btn btn-info" style={{width: 10+"vw", fontSize: 1+"vw", position: "absolute", height: 5+"vh", padding: 0}}>Submit</button>
                   </div>
                 </div>
             </form>

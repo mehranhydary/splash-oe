@@ -1,9 +1,10 @@
 import express from 'express';
 let router = express.Router();
+var Keys = require('dotenv').config();
 var Mailchimp = require('mailchimp-api-v3');
 
-var mcApiKey = 'dea726f3a6fe19e8b378727d7f173e02-us19';
-var mcListId = '31fb1de22a';
+var mcApiKey = process.env.API_KEY;
+var mcListId = process.env.LIST_ID;
  
 var mailchimp = new Mailchimp(mcApiKey);
 

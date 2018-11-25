@@ -13,11 +13,11 @@ class Alert extends Component {
   }
   render(){
     return(
-        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4" style={{position: "relative", marginLeft: 10+"%"}}>
-            <div className={this.props.alert._class} role="alert">
+        <div style={{position: "relative", padding: 0}}>
+            <div className={this.props.alert._class} role="alert" style={{fontSize: 1+"vw", height: 6+"vh", margin: 0}}>
               {this.props.alert._message}
-              <button type="button" onClick={this.closeAlert} className="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+              <button type="button" onClick={this.closeAlert} className="close" data-dismiss="alert" aria-label="Close" style={{marginTop: 0}}>
+                <span aria-hidden="true" style={{verticalAlign: "middle", fontSize: 1.3+"vw"}}>&times;</span>
               </button>
             </div>
         </div> 
